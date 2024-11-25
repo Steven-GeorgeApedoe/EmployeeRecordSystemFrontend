@@ -1,0 +1,110 @@
+/* styles.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("https://media.istockphoto.com/id/2163983591/vector/abstract-multicolored-gradient-vector-background-design-wallpaper-template-with-geometric.jpg?s=612x612&w=0&k=20&c=wb1CT6XfnlzyhA63kMaN6LW0EM-ltGJSPSPlSW9qHos=");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.login-card {
+  background: #f4f4f4;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 350px;
+}
+
+h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.login-title {
+  margin: 10px 0 20px;
+  color: #888;
+  font-size: 16px;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-group input {
+  width: 85%;
+  padding: 10px 40px 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  outline: none;
+  font-size: 14px;
+}
+
+.input-group .icon {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #888;
+}
+
+/*.checkPassword label input{*/
+/*  margin-right: 2px;*/
+/*  accent-color: black;*/
+/*}*/
+
+.loginBtn {
+  width: 100%;
+  padding: 10px 15px;
+  background: transparent;
+
+  /*border: none;*/
+  border-color: black;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.loginBtn:hover {
+  background: #5400a0;
+  box-shadow: 0 5px #215e5e;
+  text-decoration: underline;
+
+}
+.loginBtn:active{
+  opacity: 0.5;
+  box-shadow: 0 5px #215e5e;
+  transform: translateY(4px);
+}
+
+.signupText {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.signupText a {
+  color: #6a0dad;
+  text-decoration: none;
+}
+
+.signupText a:hover {
+  text-decoration: underline;
+}
+.checkPassword label input{
+  margin-right: 10px;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="ty.css">
+</head>
+<body>
+<div class="dashboardContainer">
+  <!---Sidebar--->
+  <div class="sidebar">
+    <a href="#dashboard" class="active" onclick="scrollToSection('dashboardSection')">Dashboard <i class='bx bx-home' ></i></a>
+    <a href="#analytics" onclick="scrollToSection('analyticsSection')"> Analytics<i class="bx bx-bar-chart-alt-2"></i> </a>
+    <a href="#messages" onclick="scrollToSection('messagesSection')">Messages <i class='bx bx-message' ></i></a>
+    <a href="#calender" onclick="scrollToSection('calenderSection')"> Calender <i class='bx bxs-calendar' ></i></a>
+  </div>
+</div>
+
+
+
+<!---Main Content--->
+<main class="main-content">
+<header class="header">
+  <div class="welcome-message">
+    <h2>Welcome Mr. Stybo</h2>
+  </div>
+</header>
+
+  <section class="work-status" id="dashboardSection" >
+    <h3 >Work Status</h3>
+    <div class="attendanceCard">
+      <p>Attendance</p>
+      <div class="chartInfo"></div>
+    </div>
+  </section>
+
+  <section class="leaveRequests" id="analyticsSection">
+    <h3>Analytics</h3>
+    <div class="analyticsInfo"></div>
+  </section>
+
+  <section class="messages" id="messagesSection">
+    <h2>Messages</h2>
+    <div class="messagesInfo"></div>
+  </section>
+
+  <section class="calender" id="calenderSection">
+    <h2>Calender</h2>
+    <p>No events scheduled</p>
+  </section>
+</main>
+</body>
+</html>

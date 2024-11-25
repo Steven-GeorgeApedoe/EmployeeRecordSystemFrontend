@@ -1,0 +1,78 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Employee Record System Login</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+<div class="container">
+  <div class="login-card">
+    <h2>Employee Record System</h2>
+    <p class="login-title">login</p>
+    <form>
+      <div class="input-group">
+        <input type="text" placeholder="Enter your username" required>
+        <i class="bx bx-user icon"></i>
+      </div>
+
+      <div class="input-group">
+        <input type="password" placeholder="Enter your password" required id="myInput">
+        <i class="bx bx-lock-alt icon"></i>
+      </div>
+
+      <div class="checkPassword">
+        <label><input type="checkbox" onclick="passCheck()">Show Password</label>
+        <script>
+          function passCheck(){
+            var x =document.getElementById("myInput")
+            if (x.type === "password"){
+              x.type = "text"
+            } else {
+              x.type = "password"
+            }
+
+          }
+        </script>
+      </div>
+
+      <button type="submit" class="loginBtn">Login</button>
+    </form>
+
+<!--    <div class="social-login">-->
+<!--      <button class="google">-->
+<!--        <i class="bx bxl-google"></i> Continue with Google-->
+<!--      </button>-->
+<!--      <button class="facebook">-->
+<!--        Continue with Facebook-->
+<!--        <i class="bx bxl-facebook-circle"></i>-->
+<!--      </button>-->
+<!--      <button class="github">-->
+<!--        <i class="bx bxl-github"></i> Continue with Github-->
+<!--      </button>-->
+<!--    </div>-->
+    <p class="signupText">Don't have an account? <a href="http://localhost:63342/ERS/SIgn%20up%20Page.html?_ijt=o8729ugm1ft3gesgpn1gedfsln&_ij_reload=RELOAD_ON_SAVE"target="_blank">Sign up</a></p>
+  </div>
+</div>
+</body>
+
+</html>

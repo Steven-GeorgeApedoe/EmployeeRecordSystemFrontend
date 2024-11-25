@@ -1,0 +1,90 @@
+/* General styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Dashboard container */
+.dashboard-container {
+  display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 200px;
+  background-color: #fff;
+  padding: 20px;
+  border-right: 1px solid #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar-logo {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.sidebar-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.sidebar-buttons button {
+  display: flex;
+  align-items: center;
+  background-color: #f9f9f9;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  color: #333;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar-buttons button i {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.sidebar-buttons button:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Main content */
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.welcome-message h2 {
+  margin: 0;
+}
+
+section {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+}
+
+.chart-placeholder, .graph-placeholder {
+  height: 100px;
+  background-color: #e0f7fa;
+}
