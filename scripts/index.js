@@ -11,8 +11,10 @@ form.addEventListener('submit',  (event) => {
     // Get form values
     console.log(`Email: ${emailField} || Password: ${passwordField}`);
 
-    axios.post(`${ENV.API_URL}/auth/login`,{email:emailField, password:passwordField}).then(res=>{
+    axios.post(`${ENV.API_DEPLOY_URL}/auth/login`,{email:emailField, password:passwordField}).then(res=>{
         if(res.data.msg === "Login successful"){
+            const employeeDetails = res.data.employee
+            localStorage.setItem('userDetails', JSON.stringify(employeeDetails));
             window.location.href = 'EmployeeSection.html';
         }
         console.log(res.data);
@@ -20,3 +22,7 @@ form.addEventListener('submit',  (event) => {
         console.log(err.message);
     });
 })
+
+
+const date  = new Date().toISOString().split('T')[0];
+console.log(date);

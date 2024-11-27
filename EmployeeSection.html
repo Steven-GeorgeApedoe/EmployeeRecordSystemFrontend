@@ -31,15 +31,14 @@
         <p>Reports</p>
       </div>
       <div class="welcome-message">
-        <h2>Welcome Mr. Stybo</h2>
+        <h2 class="greeting">Welcome Mr. Stybo</h2>
       </div>
     </header>
 
     <section id="dashboard-section" class="work-status">
-      <h3>Work Status</h3>
+      <h3>Attendance</h3>
       <div class="status-card">
-        <p>Attendance</p>
-        <div class="chart-placeholder"></div>
+        <div class="chart-placeholder" id="calendar-container"></div>
       </div>
     </section>
 
@@ -70,5 +69,7 @@
     document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
   }
 </script>
+
+<script src="scripts/employee.js"></script>
 </body>
 </html>

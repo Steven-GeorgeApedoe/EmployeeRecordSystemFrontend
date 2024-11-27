@@ -84,7 +84,49 @@ section {
   border-radius: 8px;
 }
 
-.chart-placeholder, .graph-placeholder {
+/* .chart-placeholder, .graph-placeholder {
   height: 100px;
   background-color: #e0f7fa;
+} */
+
+.chart-placeholder {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 10px;
+  margin-top: 20px;
 }
+
+.chart-placeholder .day {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.chart-placeholder .attended {
+  background-color: green;
+  color: white;
+}
+
+
+
+#calendar-section {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 10px;
+  margin-top: 20px;
+}
+
+#calendar-section .day {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid gray;
+  background-color: gray !important;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* #calendar-section .attended {
+  background-color: green;
+  color: gray;
+} */
