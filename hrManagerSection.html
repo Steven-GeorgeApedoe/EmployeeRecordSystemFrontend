@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HR Manager Dashboard</title>
+  <!-- Import Boxicons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="hrManagerSection.css">
+</head>
+<body>
+<div class="dashboard">
+  <!-- Welcome Section -->
+  <header class="welcome-section">
+    <h2>Welcome, Kpodo <i class='bx bx-hand'></i></h2>
+    <p>Track workforce insights effectively</p>
+  </header>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <!-- Upcoming Events -->
+    <section class="events-section">
+      <h3>Upcoming events</h3>
+      <div class="events-container">
+        <div class="calendar-controls">
+          <button><i class='bx bx-chevron-left'></i></button>
+          <button>Today</button>
+          <button><i class='bx bx-chevron-right'></i></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Total Employees -->
+    <section class="employees-section">
+      <h3>Total Employees</h3>
+      <div class="employee-stats">
+        <p><i class='bx bx-group'></i> 50 Employees</p>
+        <div>
+          <span class="dot green"></span> 40 on-site
+          <span class="dot yellow"></span> 10 remote
+        </div>
+      </div>
+    </section>
+
+    <!-- Departments -->
+    <section class="departments-section">
+      <h3>Departments</h3>
+      <table>
+        <thead>
+        <tr>
+          <th>Departments</th>
+          <th>Total Number</th>
+          <th>Vacancies</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td><i class='bx bx-server'></i> Data Center</td>
+          <td>10</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td><i class='bx bx-shield'></i> Cyber Security</td>
+          <td>15</td>
+          <td>3</td>
+        </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Incoming Leave Requests -->
+    <section class="leave-requests-section">
+      <h3>Incoming Leave Requests</h3>
+      <div class="leave-requests">
+        <div class="request-card"><i class='bx bx-user'></i> Username <span class="status">Pending</span></div>
+        <div class="request-card"><i class='bx bx-user'></i> Username <span class="status">Pending</span></div>
+        <div class="request-card"><i class='bx bx-user'></i> Username <span class="status">Pending</span></div>
+        <div class="request-card"><i class='bx bx-user'></i> Username <span class="status">Pending</span></div>
+      </div>
+    </section>
+
+    <!-- Who's on Leave -->
+    <section class="on-leave-section">
+      <h3><i class='bx bx-user-circle'></i> Who's on Leave</h3>
+      <div class="on-leave-list">
+        <div class="leave-card"><i class='bx bx-user'></i> Username <span>Time period</span></div>
+        <div class="leave-card"><i class='bx bx-user'></i> Username <span>Time period</span></div>
+        <div class="leave-card"><i class='bx bx-user'></i> Username <span>Time period</span></div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Buttons -->
+  <div class="action-buttons">
+    <button class="add-employee"><i class='bx bx-plus'></i> Add New Employee</button>
+    <button class="search-employee"><i class='bx bx-search'></i> Search Employee</button>
+  </div>
+</div>
+</body>
+</html>

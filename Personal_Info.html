@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Employee Record System Emplyeee Personal details</title>
+  <link rel="stylesheet" href="Personal_Info.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+  <aside class="sidebar">
+    <div class="sidebar-logo">
+      <i class="bx bx-layer"></i>
+    </div>
+    <div class="sidebar-buttons">
+      <button onclick="scrollToSection('dashboard-section')"><i class="bx bx-home"></i> Dashboard</button>
+      <button onclick="scrollToSection('analytics-section')"><i class="bx bx-bar-chart-alt-2"></i> Analytics</button>
+      <button onclick="scrollToSection('messages-section')"><i class="bx bx-message"></i> Messages</button>
+      <button onclick="scrollToSection('calendar-section')"><i class="bx bx-calendar"></i> Calendar</button>
+    </div>
+    <div class="sign-out-container">
+      <button class="sign-outBtn"><i class='bx bx-power-off' ></i>Sign out</button>
+
+    </div>
+  </aside>
+
+  <main class="main-content">
+    <header class="header">
+      Personal Details
+    </header>
+    <div class="profile-section">
+      <div class="profile">
+        <button class="profile-pictureBtn"> <i class="bx bx-user profile-icon"></i></button>
+        <div class="profile-info">
+          <h2>Steven-George Apedoe</h2>
+          <div class="tags">
+            <span class="tag full-time">Full-Time</span>
+            <span class="tag role"> <i class='bx bxs-briefcase'></i> Frontend Developer</span>
+            <span class="tag department"> <i class='bx bxs-building-house' ></i> Application Department</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="info-section">
+      <div class="info-card">
+        <h3>General Information</h3>
+        <div class="info-box"></div>
+      </div>
+      <div class="info-card">
+        <h3>Employment Information</h3>
+        <div class="info-box"></div>
+      </div>
+      <div class="info-card">
+        <h3>Recent Leave Requests</h3>
+        <div class="info-box"></div>
+      </div>
+    </section>
+  </main>
+</div>
+</body>
+</html>

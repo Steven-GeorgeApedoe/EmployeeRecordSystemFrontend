@@ -2,9 +2,10 @@
 
 *{
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+}
+.dashboardContainer{
+  display: flex;
 }
 
 .sidebar{
@@ -31,7 +32,38 @@
   background-color: #555;
   color: white;
 }
+.
 /*.sidebar a:active:not(.active){*/
 /*  background-color: #2e74c0;*/
 /*  color: #fff;*/
 /*}*/
+
+.main-content{
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.welcome-message{
+  margin: 0;
+}
+
+section{
+  width: 1000px;
+  margin-left: 200px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid ;
+  border-radius: 10px;
+}
+
+.chartInfo, .analyticsInfo, .messagesInfo {
+  height: 100px;
+  background-color: #1ba8a8;
+}

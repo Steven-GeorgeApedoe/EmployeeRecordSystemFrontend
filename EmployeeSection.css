@@ -59,6 +59,34 @@ body {
   color: white;
 }
 
+.sign-out-container {
+  margin-top: auto; /* Push the button to the bottom */
+  padding: 20px;
+  text-align: center;
+}
+
+.sign-outBtn {
+  background-color: #d9534f; /* Red button */
+  color: white;
+  border: none;
+  padding: 10px 10px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sign-outBtn i {
+  margin-right: 5px;
+}
+
+.sign-outBtn:hover {
+  background-color: #2c9fc9; /* Darker red on hover */
+  scale: 1.1;
+}
+
+
+
 /* Main content */
 .main-content {
   flex-grow: 1;
@@ -130,3 +158,74 @@ section {
   background-color: green;
   color: gray;
 } */
+
+
+.request_leaveBtn{
+  margin-left: 1260px;
+}
+.request_leave{
+  color: #dddddd;
+  padding: 10px 20px 10px 10px;
+  border-radius: 5px;
+  background-color: #0866FF;
+  box-shadow: 0 4px #384f73;
+
+}
+.request_leave:hover{
+  cursor: pointer;
+  scale: 1.1;
+  color: black;
+  box-shadow: 0 6px #1d222a;
+}
+.request_leave:active{
+  box-shadow: 0 3px #1d222a;
+  transform: translateY(4px);
+
+}
+
+.sickLeaveBtn{
+  padding: 5px 5px 5px 5px;
+  border-radius: 10px;
+  background-color: #1ba8a8;
+}
+.sickLeaveBtn:hover{
+  scale: 1.1;
+  color: #dddddd;
+  box-shadow: 0 4px #384f73;
+}
+.sickLeaveBtn:active{
+  box-shadow: 0 2px #384f73;
+  transform: translateY(4px);
+}
+
+.MaternityLeaveBtn{
+  margin-left: 20px;
+  padding: 5px 5px 5px 5px;
+  border-radius: 5px;
+  background-color: #1ba8a8;
+}
+.MaternityLeaveBtn:hover{
+  scale: 1.1;
+  color: #dddddd;
+  box-shadow: 0 4px #384f73;
+}
+.MaternityLeaveBtn:active{
+  box-shadow: 0 2px #384f73;
+  transform: translateY(4px);
+}
+
+.VacationLeaveBtn{
+  margin-left: 20px;
+  padding: 5px 5px 5px 5px;
+  border-radius: 5px;
+  background-color: #1ba8a8;
+}
+.VacationLeaveBtn:hover{
+  scale: 1.1;
+  color: #dddddd;
+  box-shadow: 0 4px #384f73;
+}
+.VacationLeaveBtn:active{
+  box-shadow: 0 2px #384f73;
+  transform: translateY(4px);
+}
