@@ -229,3 +229,8 @@ section {
   box-shadow: 0 2px #384f73;
   transform: translateY(4px);
 }
+
+a{
+  text-decoration: none;
+  color: #333;
+}

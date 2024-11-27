@@ -1,7 +1,12 @@
 const greeting = document.querySelector('.greeting');
 const userDetails = JSON.parse(localStorage.getItem('userDetails'));
+const signOut = document.querySelector('.sign-outBtn')
 
-greeting.innerHTML = `Welcome ${userDetails.firstName} ${userDetails.lastName}`
+
+if (userDetails) {
+    greeting.innerHTML = `Welcome ${userDetails.firstName} ${userDetails.lastName}`
+  }
+
 
 const renderAttendanceCalendar = () => {
     if (!userDetails || !userDetails.attendance) return;
@@ -112,3 +117,8 @@ const renderRegularCalendar = () => {
   renderRegularCalendar();
 
 // console.log(userDetails);
+
+signOut.addEventListener('click', () => {
+    localStorage.removeItem('userDetails');
+    window.location.href = 'index.html';
+});
