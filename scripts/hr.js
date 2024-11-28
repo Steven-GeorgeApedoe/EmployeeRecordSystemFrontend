@@ -26,11 +26,11 @@ newEmpolyeeForm.addEventListener("submit", (event) => {
   };
 
   try {
-    axios.post(`${ENV.API_DEPLOY_URL}/auth/signup`, newEmployee).then((res) => {
+    axios.post(`${ENV.API_URL}/auth/signup`, newEmployee).then((res) => {
       alert(`${res.data.msg}`);
-      window.location.href = "#";
+      window.location.href = "hrManagementSections.html";
     });
   } catch (err) {
-    console.log(err.message);
+    console.log(err.response.data);
   }
 });

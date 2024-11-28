@@ -1,6 +1,7 @@
 const greeting = document.querySelector('.greeting');
 const userDetails = JSON.parse(localStorage.getItem('userDetails'));
 const signOut = document.querySelector('.sign-outBtn')
+const profileBtn = document.querySelector('.profile');
 
 
 if (userDetails) {
@@ -121,4 +122,9 @@ const renderRegularCalendar = () => {
 signOut.addEventListener('click', () => {
     localStorage.removeItem('userDetails');
     window.location.href = 'index.html';
+});
+
+
+profileBtn.addEventListener('click', () => {
+    window.location.href = 'EmployeeInfo.html';
 });

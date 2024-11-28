@@ -13,6 +13,7 @@ body {
 /* Layout styling */
 .container {
   display: flex;
+  height: 100vh;
 }
 
 /* Sidebar styling */
@@ -219,4 +220,16 @@ cursor: pointer;
   background-color: #c7b0ad;
   height: 50px;
   border-radius: 5px;
+}
+
+
+.info-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: #f8f9fa; /* Light grey background */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
