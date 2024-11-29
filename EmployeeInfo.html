@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Employee Record System Emplyeee Personal details</title>
-  <link rel="stylesheet" href="css/Personal_Info.css">
+  <title>Employee Record System - Personal Details</title>
+  <link rel="stylesheet" href="EmpolyeeInfo.css">
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 <body>
@@ -19,8 +19,7 @@
       <button onclick="scrollToSection('calendar-section')"><i class="bx bx-calendar"></i> Calendar</button>
     </div>
     <div class="sign-out-container">
-      <button class="sign-outBtn"><i class='bx bx-power-off' ></i>Sign out</button>
-
+      <button class="sign-outBtn"><i class="bx bx-power-off"></i> Sign out</button>
     </div>
   </aside>
 
@@ -30,13 +29,13 @@
     </header>
     <div class="profile-section">
       <div class="profile">
-        <button class="profile-pictureBtn"> <i class="bx bx-user profile-icon"></i></button>
+        <button class="profile-pictureBtn"><i class="bx bx-user profile-icon"></i></button>
         <div class="profile-info">
-          <h2 class="name">Steven-George Apedoe</h2>
+          <h2 class="name">Elizabeth Lopez</h2>
           <div class="tags">
             <span class="tag full-time">Full-Time</span>
-            <span class="tag role"> <i class='bx bxs-briefcase'></i> Frontend Developer</span>
-            <span class="tag department"> <i class='bx bxs-building-house' ></i> Application Department</span>
+            <span class="tag role"><i class="bx bxs-briefcase"></i> UX Leader</span>
+            <span class="tag department"><i class="bx bxs-building-house"></i> Design Department</span>
           </div>
         </div>
       </div>
@@ -45,19 +44,35 @@
     <section class="info-section">
       <div class="info-card">
         <h3>General Information</h3>
-        <div class="info-box"></div>
+        <div class="info-box">
+          <p><strong>Employee ID:</strong> A0001</p>
+          <p><strong>ID Number:</strong> 0001234567</p>
+          <p><strong>Phone:</strong> (719) 860-5684</p>
+          <p><strong>Email:</strong> elizabethlopez95@hotmail.com</p>
+        </div>
       </div>
       <div class="info-card">
         <h3>Employment Information</h3>
-        <div class="info-box"></div>
+        <div class="info-box">
+          <p><strong>Position:</strong> UX Leader</p>
+          <p><strong>Department:</strong> Design Department</p>
+          <p><strong>Start Date:</strong> 2024-11-27</p>
+        </div>
       </div>
       <div class="info-card">
         <h3>Recent Leave Requests</h3>
-        <div class="info-box"></div>
+        <div class="info-box">
+          <p>No recent leave requests available.</p>
+        </div>
       </div>
     </section>
   </main>
-  <script src="scripts/empInfo.js"></script>
 </div>
+<script>
+  function scrollToSection(sectionId) {
+    // Scroll to the corresponding section
+    document.getElementById(sectionId).scrollIntoView({ behavior: "smooth" });
+  }
+</script>
 </body>
 </html>

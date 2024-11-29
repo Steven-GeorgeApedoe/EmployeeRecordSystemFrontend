@@ -13,30 +13,27 @@
 <div class="dashboard-container">
   <!-- Sidebar -->
   <aside class="sidebar">
+
     <div class="sidebar-logo">
       <i class="bx bx-layer"></i>
     </div>
+
     <div class="sidebar-buttons">
       <button onclick="scrollToSection('dashboard-section')"><i class="bx bx-home"></i> Dashboard</button>
       <button onclick="scrollToSection('analytics-section')"><i class="bx bx-bar-chart-alt-2"></i> Analytics</button>
       <button onclick="scrollToSection('messages-section')"><i class="bx bx-message"></i> Messages</button>
       <button onclick="scrollToSection('calendar-section')"><i class="bx bx-calendar"></i> Calendar</button>
-      <button onclick="scrollToSection('profile-section')"><i class="bx bx-user"></i> Profile</button>
+      <button class="profile"><i class="bx bx-user"></i>Profile</button>
     </div>
 
     <div class="sign-out-container">
       <button class="sign-outBtn"><i class='bx bx-power-off' ></i>Sign out</button>
-
     </div>
   </aside>
 
   <!-- Main content -->
   <main class="main-content">
     <header class="header">
-      <div class="nav">
-        <p>Attendance</p>
-        <p>Reports</p>
-      </div>
       <div class="welcome-message">
         <h2 class="greeting">Welcome Mr. Stybo</h2>
       </div>
@@ -76,7 +73,7 @@
 </div>
 <!-- Modal -->
 <div class="modal fade" id="requestLeaveModal" tabindex="-1" aria-labelledby="requestLeaveModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
+  <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <!-- Modal Header -->
       <div class="modal-header">
@@ -86,21 +83,45 @@
 
       <!-- Modal Body -->
       <div class="modal-body">
-        <p>Select a Leave type</p>
-        <button class="sickLeaveBtn">Sick Leave</button>
-        <button class="MaternityLeaveBtn">Maternity Leave</button>
-        <button class="VacationLeaveBtn">Vacation </button>
+        <!-- Leave Type Selector -->
+        <div class="input-group mb-3">
+          <label class="input-group-text" for="leaveTypeSelect">Type of Request</label>
+          <select class="form-select" id="leaveTypeSelect">
+            <option selected>Choose Type</option>
+            <option value="Sick Leave">Sick Leave</option>
+            <option value="Casual Leave">Casual Leave</option>
+            <option value="Maternity Leave">Maternity Leave</option>
+          </select>
+        </div>
 
+        <!-- Start Date Picker -->
+        <div class="mb-3">
+          <label for="startDate" class="form-label">Start Date</label>
+          <input type="date" class="form-control" id="startDate">
+        </div>
+
+        <!-- End Date Picker -->
+        <div class="mb-3">
+          <label for="endDate" class="form-label">End Date</label>
+          <input type="date" class="form-control" id="endDate">
+        </div>
+
+        <!-- Reason Textarea -->
+        <div class="mb-3">
+          <label for="leaveReason" class="form-label">Reason</label>
+          <textarea class="form-control" id="leaveReason" rows="3" placeholder="Enter the reason for leave"></textarea>
+        </div>
       </div>
 
       <!-- Modal Footer -->
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-        <button type="button" class="btn btn-primary">Yes, Request Leave</button>
+        <button type="button" class="btn btn-primary" id="submitLeaveRequest">Yes, Request Leave</button>
       </div>
     </div>
   </div>
 </div>
+
 
 
 <script>
