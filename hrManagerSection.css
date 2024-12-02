@@ -164,3 +164,80 @@ th {
 .add-employee:hover, .search-employee:hover {
   opacity: 0.9;
 }
+
+/* Sidebar */
+.sidebar {
+  background-color: #333;
+  color: #fff;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.sidebar-logo {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.sidebar-buttons button {
+  width: 100%;
+  background: none;
+  border: none;
+  color: #fff;
+  text-align: left;
+  padding: 15px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.sidebar-buttons button:hover {
+  background-color: #444;
+}
+
+.sign-out-container button {
+  width: 100%;
+  background: none;
+  border: none;
+  color: #f44336;
+  padding: 15px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.sign-out-container {
+  margin-top: auto; /* Push the button to the bottom */
+  padding: 20px;
+  text-align: center;
+}
+
+.sign-outBtn {
+  background-color: #d9534f; /* Red button */
+  color: white;
+  border: none;
+  padding: 10px 10px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sign-outBtn i {
+  margin-right: 5px;
+}
+
+.sign-outBtn:hover {
+  background-color: #d9534f; /* Darker red on hover */
+  color: #000;
+  scale: 1.1;
+}
+
+.dashboard-container {
+  display: flex;
+}
+
+.main-content {
+  width: 100%;
+}

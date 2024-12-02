@@ -45,18 +45,18 @@
       <div class="info-card">
         <h3>General Information</h3>
         <div class="info-box">
-          <p><strong>Employee ID:</strong> A0001</p>
-          <p><strong>ID Number:</strong> 0001234567</p>
-          <p><strong>Phone:</strong> (719) 860-5684</p>
-          <p><strong>Email:</strong> elizabethlopez95@hotmail.com</p>
+          <!-- <p><strong>Employee ID:</strong> A0001</p>
+          <p><strong>ID Number:</strong> 0001234567</p> -->
+          <p class="phoneNumber"><strong>Phone:</strong> (719) 860-5684</p>
+          <p class="email"><strong>Email:</strong> elizabethlopez95@hotmail.com</p>
         </div>
       </div>
       <div class="info-card">
         <h3>Employment Information</h3>
         <div class="info-box">
-          <p><strong>Position:</strong> UX Leader</p>
-          <p><strong>Department:</strong> Design Department</p>
-          <p><strong>Start Date:</strong> 2024-11-27</p>
+          <p class="position"><strong>Position:</strong> UX Leader</p>
+          <p class="dep"><strong>Department:</strong> Design Department</p>
+          <p class="startDate"><strong>Start Date:</strong> 2024-11-27</p>
         </div>
       </div>
       <div class="info-card">
@@ -74,5 +74,9 @@
     document.getElementById(sectionId).scrollIntoView({ behavior: "smooth" });
   }
 </script>
+
+<script src="scripts/env.js"></script>
+<script src="scripts/employeeInfo.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </body>
 </html>

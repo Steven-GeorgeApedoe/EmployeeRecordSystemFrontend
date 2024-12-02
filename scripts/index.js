@@ -13,7 +13,7 @@ form.addEventListener("submit", (event) => {
   console.log(`Email: ${emailField} || Password: ${passwordField}`);
 
   axios
-    .post(`${ENV.API_URL}/auth/login`, {
+    .post(`${ENV.API_DEPLOY_URL}/auth/login`, {
       email: emailField,
       password: passwordField,
     })
@@ -38,15 +38,15 @@ form.addEventListener("submit", (event) => {
       console.log(res.data);
     })
     .catch((err) => {
-        login.disabled = false;
+      login.disabled = false;
       login.textContent = "Login";
-      alert(err.response.data)
-    })
-    // .finally(() => {
-    //   // Re-enable the button and restore its text
-    //   login.disabled = false;
-    //   login.textContent = "Login";
-    // });
+      alert(err.response.data);
+    });
+  // .finally(() => {
+  //   // Re-enable the button and restore its text
+  //   login.disabled = false;
+  //   login.textContent = "Login";
+  // });
 });
 
 const date = new Date().toISOString().split("T")[0];
