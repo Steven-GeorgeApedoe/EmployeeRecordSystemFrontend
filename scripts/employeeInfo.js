@@ -10,7 +10,7 @@ const position = document.querySelector('.position')
 const dep = document.querySelector('.dep')
 const startDate = document.querySelector('.startDate')
 
-const signOutBtn = document.querySelector(".sign-outBtn");
+const signOutBtn = document.querySelector(".sign-out-container");
 
 
 if (userDetails) {

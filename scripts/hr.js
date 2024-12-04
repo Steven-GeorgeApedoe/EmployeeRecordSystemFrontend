@@ -1,7 +1,7 @@
 const greeting = document.querySelector(".greeting");
 const userDetails = JSON.parse(localStorage.getItem("userDetails"));
 const newEmpolyeeForm = document.querySelector(".newEmpolyeeForm");
-
+const signOutBtn = document.querySelector(".sign-out-container");
 if (userDetails) {
   greeting.textContent = `Welcome ${userDetails.firstName} ${userDetails.lastName}`;
 }
@@ -204,4 +204,11 @@ document.addEventListener("DOMContentLoaded", () => {
   fetchLeaveRequests();
   fetchDepartments();
   fetchEmployees();
+});
+
+
+signOutBtn.addEventListener("click", () => {
+  alert("Sign out successful")
+  localStorage.removeItem("userDetails");
+  window.location.href = "index.html";
 });

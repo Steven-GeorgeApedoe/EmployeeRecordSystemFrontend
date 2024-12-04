@@ -3,7 +3,7 @@ const userDetails = JSON.parse(localStorage.getItem("userDetails"));
 const signOut = document.querySelector(".sign-outBtn");
 const profileBtn = document.querySelector(".profile");
 const submitLeaveRequest = document.querySelector("#submitLeaveRequest");
-const signOutBtn = document.querySelector(".sign-outBtn");
+const signOutBtn = document.querySelector(".sign-out-container");
 
 if (userDetails) {
   greeting.innerHTML = `Welcome ${userDetails.firstName} ${userDetails.lastName}`;
@@ -130,6 +130,7 @@ renderRegularCalendar();
 // console.log(userDetails);
 
 signOut.addEventListener("click", () => {
+  alert("Sign out successful");
   localStorage.removeItem("userDetails");
   window.location.href = "index.html";
 });
@@ -173,10 +174,3 @@ const leaveRequestData = () => {
 };
 
 submitLeaveRequest.addEventListener("click", leaveRequestData);
-
-
-signOutBtn.addEventListener("click", () => {
-  alert("Signed out successfully!");
-  localStorage.removeItem("userDetails");
-  window.location.href = "index.html";
-});

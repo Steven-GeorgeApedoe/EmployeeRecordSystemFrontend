@@ -29,18 +29,18 @@ form.addEventListener("submit", (event) => {
           res.data.employee.position === "Manager"
         ) {
           alert(`${res.data.msg}`)
-          login.disabled = false;
-          login.textContent = "Login";
           const employeeDetails = res.data.employee;
           localStorage.setItem("userDetails", JSON.stringify(employeeDetails));
           window.location.href = "hrManagerSection.html";
-        } else {
-          alert(`${res.data.msg}`)
           login.disabled = false;
           login.textContent = "Login";
+        } else {
+          alert(`${res.data.msg}`)
           const employeeDetails = res.data.employee;
           localStorage.setItem("userDetails", JSON.stringify(employeeDetails));
           window.location.href = "EmployeeSection.html";
+          login.disabled = false;
+          login.textContent = "Login";
         }
       }
     })
