@@ -5,12 +5,14 @@ const login = document.querySelector("button");
 form.addEventListener("submit", (event) => {
   // Prevent form from submitting
   event.preventDefault();
+  login.disabled = true;
+  login.textContent = "Loading...";
 
   let emailField = document.querySelector(".email").value;
   let passwordField = document.querySelector(".password").value;
 
   // Get form values
-  console.log(`Email: ${emailField} || Password: ${passwordField}`);
+  // console.log(`Email: ${emailField} || Password: ${passwordField}`);
 
   axios
     .post(`${ENV.API_DEPLOY_URL}/auth/login`, {
@@ -18,24 +20,29 @@ form.addEventListener("submit", (event) => {
       password: passwordField,
     })
     .then((res) => {
-      login.disabled = true;
-      login.textContent = "Loading...";
+      // login.disabled = true;
+      // login.textContent = "Loading...";
 
       if (res.data.msg === "Login successful") {
         if (
           res.data.employee.position === "HR" ||
           res.data.employee.position === "Manager"
         ) {
+          alert(`${res.data.msg}`)
+          login.disabled = false;
+          login.textContent = "Login";
           const employeeDetails = res.data.employee;
           localStorage.setItem("userDetails", JSON.stringify(employeeDetails));
           window.location.href = "hrManagerSection.html";
         } else {
+          alert(`${res.data.msg}`)
+          login.disabled = false;
+          login.textContent = "Login";
           const employeeDetails = res.data.employee;
           localStorage.setItem("userDetails", JSON.stringify(employeeDetails));
           window.location.href = "EmployeeSection.html";
         }
       }
-      console.log(res.data);
     })
     .catch((err) => {
       login.disabled = false;
@@ -49,5 +56,5 @@ form.addEventListener("submit", (event) => {
   // });
 });
 
-const date = new Date().toISOString().split("T")[0];
-console.log(date);
+// const date = new Date().toISOString().split("T")[0];
+// console.log(date);

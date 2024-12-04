@@ -10,6 +10,9 @@ const position = document.querySelector('.position')
 const dep = document.querySelector('.dep')
 const startDate = document.querySelector('.startDate')
 
+const signOutBtn = document.querySelector(".sign-outBtn");
+
+
 if (userDetails) {
   const userData = JSON.parse(userDetails)
   empName.textContent = `${userData.firstName} ${userData.lastName}`
@@ -22,4 +25,10 @@ if (userDetails) {
   position.innerHTML = `<p><strong>Position:</strong> ${userData.position}</p>`
   dep.innerHTML = `<p><strong>Department:</strong> ${userData.department}</p>`
   startDate.innerHTML = `<p><strong>Start Date:</strong> ${userData.startDate.split("T")[0]}</p>`
-}   
+}  
+
+signOutBtn.addEventListener("click", () => {
+  alert("Signed out successfully!");
+  localStorage.removeItem("userDetails");
+  window.location.href = "index.html";
+});

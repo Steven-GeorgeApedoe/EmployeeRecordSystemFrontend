@@ -85,3 +85,12 @@ function generateReport(employeeId) {
       console.error("Error generating report:", error);
     });
 }
+
+const signOutBtn = document.querySelector(".sign-outBtn");
+
+signOutBtn.addEventListener("click", () => {
+  localStorage.removeItem("userDetails");
+  alert("Signed out successfully!");
+  window.location.href = "index.html";
+});
+

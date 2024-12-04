@@ -3,6 +3,7 @@ const userDetails = JSON.parse(localStorage.getItem("userDetails"));
 const signOut = document.querySelector(".sign-outBtn");
 const profileBtn = document.querySelector(".profile");
 const submitLeaveRequest = document.querySelector("#submitLeaveRequest");
+const signOutBtn = document.querySelector(".sign-outBtn");
 
 if (userDetails) {
   greeting.innerHTML = `Welcome ${userDetails.firstName} ${userDetails.lastName}`;
@@ -172,3 +173,10 @@ const leaveRequestData = () => {
 };
 
 submitLeaveRequest.addEventListener("click", leaveRequestData);
+
+
+signOutBtn.addEventListener("click", () => {
+  alert("Signed out successfully!");
+  localStorage.removeItem("userDetails");
+  window.location.href = "index.html";
+});
